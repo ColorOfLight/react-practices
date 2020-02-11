@@ -51,5 +51,13 @@
     "prettier": "^1.19.1",
     "stylelint": "^13.1.0",
     "stylelint-config-recommended": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint"
   }
 }
